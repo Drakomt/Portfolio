@@ -1,12 +1,12 @@
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import suicide from "../../Assets/Projects/suicide.png";
-import SupChat from "../../Assets/Projects/SupChat.png";
-import NetflixClone from "../../Assets/Projects/NetflixClone.png";
-import Eshop from "../../Assets/Projects/EShopMERN.png";
+import leaf from "../../assets/Projects/leaf.png";
+import emotion from "../../assets/Projects/emotion.png";
+import suicide from "../../assets/Projects/suicide.png";
+import SupChat from "../../assets/Projects/SupChat.png";
+import NetflixClone from "../../assets/Projects/NetflixClone.png";
+import Eshop from "../../assets/Projects/EShopMERN.png";
 
 function Projects() {
   return (
