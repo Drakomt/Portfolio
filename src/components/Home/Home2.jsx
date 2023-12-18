@@ -87,7 +87,7 @@ function Home2() {
               </li> */}
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/matthew-tsiplakov-8607b5268/"
+                  href="https://www.linkedin.com/in/matthew-tsiplakov/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
