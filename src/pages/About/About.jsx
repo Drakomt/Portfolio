@@ -2,10 +2,10 @@ import "./About.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../../components/Particle";
 import Github from "../../components/Github";
-import Techstack from "../../components/Techstack";
-import Aboutcard from "../../components/AboutCard";
+import Aboutcard from "../../components/AboutCard/AboutCard";
 import laptopImg from "../../assets/about.png";
-import Toolstack from "../../components/Toolstack";
+import SkillsStack from "../../components/SkillsStack/SkillsStack";
+import ToolsStack from "../../components/ToolsStack/ToolsStack";
 
 function About() {
   return (
@@ -38,12 +38,12 @@ function About() {
           Professional <strong className="purple">Skillset </strong>
         </h1>
 
-        <Techstack />
+        <SkillsStack />
 
         <h1 className="project-heading">
           <strong className="purple">Tools</strong> I use
         </h1>
-        <Toolstack />
+        <ToolsStack />
 
         <Github />
       </Container>

@@ -74,7 +74,7 @@
     color: #cd5ff8;
   }
   
-  .Typewriter__wrapper {
+  /* .Typewriter__wrapper {
     font-size: 2.2em !important;
     color: #be6adf !important;
     font-weight: 600 !important;
@@ -93,7 +93,7 @@
     .Typewriter__cursor {
       display: none !important;
     }
-  }
+  } */
   
   .myAvtar {
     justify-content: center !important;

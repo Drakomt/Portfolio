@@ -1,9 +1,9 @@
-import React from "react";
-import Typewriter from "typewriter-effect";
+import "./Typewriter.css";
+import TypewriterEffect from "typewriter-effect";
 
-function Type() {
+function Typewriter() {
   return (
-    <Typewriter
+    <TypewriterEffect
       options={{
         strings: [
           "Software Developer",
@@ -19,4 +19,4 @@ function Type() {
   );
 }
 
-export default Type;
+export default Typewriter;

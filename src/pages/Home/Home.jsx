@@ -2,8 +2,8 @@ import "./Home.css";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../assets/home-main.svg";
 import Particle from "../../components/Particle";
-import Introduction from "../../components/Introduction";
-import Type from "../../components/Type";
+import Introduction from "../../components/Introduction/Introduction";
+import Typewriter from "../../components/Typewriter/Typewriter";
 
 function Home() {
   return (
@@ -26,7 +26,7 @@ function Home() {
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
-                <Type />
+                <Typewriter />
               </div>
             </Col>
 
