@@ -1,9 +1,9 @@
-import React from "react";
+import "./Home.css";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../assets/home-main.svg";
-import Particle from "../Particle";
-import Home2 from "./Home2";
-import Type from "./Type";
+import Particle from "../../components/Particle";
+import Introduction from "../../components/Introduction";
+import Type from "../../components/Type";
 
 function Home() {
   return (
@@ -41,7 +41,7 @@ function Home() {
           </Row>
         </Container>
       </Container>
-      <Home2 />
+      <Introduction />
     </section>
   );
 }

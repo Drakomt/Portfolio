@@ -1,6 +1,7 @@
+import "./Projects.css";
 import { Container, Row, Col } from "react-bootstrap";
-import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
+import ProjectCard from "../../components/ProjectCard";
+import Particle from "../../components/Particle";
 import leaf from "../../assets/Projects/leaf.png";
 import emotion from "../../assets/Projects/emotion.png";
 import suicide from "../../assets/Projects/suicide.png";

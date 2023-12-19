@@ -1,7 +1,8 @@
+import "./Resume.css";
 import { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
+import Particle from "../../components/Particle";
 import pdf from "../../assets/CV-Matthew-NoLink.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
