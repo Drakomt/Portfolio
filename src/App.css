@@ -36,3 +36,9 @@
     transform: rotate(360deg);
   }
 }
+
+#no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}
+

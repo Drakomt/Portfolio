@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Preloader from "./components/Pre";
+import Loading from "./components/Loading/Loading";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
@@ -13,9 +13,8 @@ import {
   Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
-import "./style.css";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -30,7 +29,7 @@ function App() {
 
   return (
     <Router>
-      <Preloader load={load} />
+      <Loading load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />
         <ScrollToTop />
