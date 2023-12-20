@@ -1,17 +1,52 @@
+.wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.1s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+}
+  
+@keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+}
+
 .quote-card-view {
     border: none !important;
     color: white !important;
     background-color: transparent !important;
-  }
+}
   
-  .about-activity {
+.about-activity {
     list-style: none !important;
     text-align: left !important;
     padding-left: 1px !important;
-  }
+}
   
-  @media (max-width: 767px) {
+@media (max-width: 767px) {
     .about-img {
       padding-top: 0 !important;
     }
-  }
+}

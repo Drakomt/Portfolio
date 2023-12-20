@@ -75,3 +75,36 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-image: linear-gradient(to left, rgb(27 20 41), rgb(20 15 35));
 }
+
+
+/* --------- */
+/*Scrollbar   */
+/*Only in WebKit-based browser (like Chrome or Edge)*/
+/* --------- */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #2d1950;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(178, 121, 216, 0.959);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(222, 130, 235, 0.911);
+  border-radius: 12px;
+}
+
+html {
+  /* For Firefox */
+  scrollbar-color: rgba(222, 130, 235, 0.911) #2d1950 !important;
+  scrollbar-width: auto !important;
+}

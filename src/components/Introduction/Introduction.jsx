@@ -9,16 +9,16 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-function Home2() {
+function Introduction() {
   return (
-    <Container fluid className="home-about-section" id="about">
+    <Container fluid className="intro-section" id="intro">
       <Container>
         <Row>
-          <Col md={8} className="home-about-description">
+          <Col md={8} className="intro-description">
             <h1 style={{ fontSize: "2.6em" }}>
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
-            <p className="home-about-body">
+            <p className="intro-body">
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
@@ -59,18 +59,18 @@ function Home2() {
           </Col>
         </Row>
         <Row>
-          <Col md={12} className="home-about-social">
+          <Col md={12} className="intro-social">
             <h1>FIND ME ON</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
-            <ul className="home-about-social-links">
+            <ul className="intro-social-links">
               <li className="social-icons">
                 <a
                   href="https://github.com/Drakomt"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour  intro-social-icons"
                 >
                   <AiFillGithub />
                 </a>
@@ -80,7 +80,7 @@ function Home2() {
                   href="https://twitter.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour  intro-social-icons"
                 >
                   <AiOutlineTwitter />
                 </a>
@@ -90,7 +90,7 @@ function Home2() {
                   href="https://www.linkedin.com/in/matthew-tsiplakov/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+                  className="icon-colour  intro-social-icons"
                 >
                   <FaLinkedinIn />
                 </a>
@@ -100,7 +100,7 @@ function Home2() {
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                  className="icon-colour intro-social-icons"
                 >
                   <AiFillInstagram />
                 </a>
@@ -112,4 +112,4 @@ function Home2() {
     </Container>
   );
 }
-export default Home2;
+export default Introduction;
