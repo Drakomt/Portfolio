@@ -6,6 +6,7 @@ import {
     FaCircle,
     FaDotCircle,
   } from "react-icons/fa";
+  import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
 import "./ImageSlider.css"
 
 function ImageSlider({ images }) {
@@ -58,7 +59,8 @@ function ImageSlider({ images }) {
         style={{ left: 0 }}
         aria-label="View Previous Image"
       >
-        <FaArrowLeft aria-hidden />
+        {/* <FaArrowLeft aria-hidden /> */}
+        <ArrowBigLeft aria-hidden />
       </button>
       <button
         onClick={showNextImage}
@@ -66,7 +68,8 @@ function ImageSlider({ images }) {
         style={{ right: 0 }}
         aria-label="View Next Image"
       >
-        <FaArrowRight aria-hidden />
+        {/* <FaArrowRight aria-hidden /> */}
+        <ArrowBigRight aria-hidden />
       </button>
       <div
         style={{
@@ -86,9 +89,11 @@ function ImageSlider({ images }) {
             onClick={() => setImageIndex(index)}
           >
             {index === imageIndex ? (
-              <FaDotCircle aria-hidden />
+              // <FaDotCircle aria-hidden/>
+              <CircleDot aria-hidden />
             ) : (
-              <FaCircle aria-hidden />
+              // <FaCircle aria-hidden />
+              <Circle aria-hidden />
             )}
           </button>
         ))}
