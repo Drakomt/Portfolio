@@ -11,3 +11,11 @@
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
   }
+
+.project-card-text{
+  margin-bottom: 10px;
+  text-align: left;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+}
