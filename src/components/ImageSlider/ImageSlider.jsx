@@ -8,9 +8,11 @@ import {
   } from "react-icons/fa";
   import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
 import "./ImageSlider.css"
+import ImageView from "../ImageView/ImageView";
 
 function ImageSlider({ images }) {
-  const [imageIndex, setImageIndex] = useState(0)
+  const [imageIndex, setImageIndex] = useState(0);
+  // const [isViewOpen, setIsViewOpen] = useState(false);
 
   function showNextImage() {
     setImageIndex(index => {
@@ -25,6 +27,14 @@ function ImageSlider({ images }) {
       return index - 1
     })
   }
+
+  // const openImageView = () => {
+  //   setIsViewOpen(true);
+  // };
+
+  // const closeImageView = () => {
+  //   setIsViewOpen(false);
+  // };
 
   return (
     <section
@@ -50,6 +60,7 @@ function ImageSlider({ images }) {
             aria-hidden={imageIndex !== index}
             className="img-slider-img"
             style={{ translate: `${-100 * imageIndex}%` }}
+            // onClick={openImageView}
           />
         ))}
       </div>
@@ -98,7 +109,15 @@ function ImageSlider({ images }) {
           </button>
         ))}
       </div>
-      <div id="after-image-slider-controls" />
+      {/* {isViewOpen && (
+        <ImageView
+          imageUrl={images[imageIndex].url}
+          alt={images[imageIndex].alt}
+          onClose={closeImageView}
+          onPrev={showPrevImage}
+          onNext={showNextImage}
+        />
+      )} */}
     </section>
   )
 }

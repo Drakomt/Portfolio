@@ -149,3 +149,188 @@ function Projects() {
 }
 
 export default Projects;
+
+
+
+
+// import "./Projects.css";
+// import React, { useState } from "react";
+// import { Container, Row, Col } from "react-bootstrap";
+// import ProjectCard from "../../components/ProjectCard/ProjectCard";
+// import Particle from "../../components/Particle";
+// import leaf from "../../assets/Projects/leaf.png";
+// import emotion from "../../assets/Projects/emotion.png";
+// import suicide from "../../assets/Projects/suicide.png";
+
+// import Eshop from "../../assets/Projects/EShopMERN/EShopMERN.png";
+// import Eshop2 from "../../assets/Projects/EShopMERN/EShopMERN-2.png";
+// import Eshop3 from "../../assets/Projects/EShopMERN/EShopMERN-3.png";
+// import Eshop4 from "../../assets/Projects/EShopMERN/EShopMERN-4.png";
+// import Eshop5 from "../../assets/Projects/EShopMERN/EShopMERN-5.png";
+// import Eshop6 from "../../assets/Projects/EShopMERN/EShopMERN-6.png";
+// import Eshop7 from "../../assets/Projects/EShopMERN/EShopMERN-7.png";
+// import Eshop8 from "../../assets/Projects/EShopMERN/EShopMERN-8.png";
+// import Eshop9 from "../../assets/Projects/EShopMERN/EShopMERN-9.png";
+
+// import NetflixClone from "../../assets/Projects/NetflixClone/NetflixClone.png";
+// import NetflixClone2 from "../../assets/Projects/NetflixClone/NetflixClone-2.png";
+// import NetflixClone3 from "../../assets/Projects/NetflixClone/NetflixClone-3.png";
+// import NetflixClone4 from "../../assets/Projects/NetflixClone/NetflixClone-4.png";
+// import NetflixClone5 from "../../assets/Projects/NetflixClone/NetflixClone-5.png";
+// import NetflixClone6 from "../../assets/Projects/NetflixClone/NetflixClone-6.png";
+// import NetflixClone7 from "../../assets/Projects/NetflixClone/NetflixClone-7.png";
+
+// import SupChat from "../../assets/Projects/SupChat/SupChat.png";
+// import SupChat2 from "../../assets/Projects/SupChat/SupChat-2.png";
+// import SupChat3 from "../../assets/Projects/SupChat/SupChat-3.png";
+// import SupChat4 from "../../assets/Projects/SupChat/SupChat-4.png";
+// import SupChat5 from "../../assets/Projects/SupChat/SupChat-5.png";
+// import SupChat6 from "../../assets/Projects/SupChat/SupChat-6.png";
+// import SupChat7 from "../../assets/Projects/SupChat/SupChat-7.png";
+// import ImageView from "../../components/ImageView/ImageView";
+
+
+
+
+// function Projects() {
+//   const [isViewOpen, setIsViewOpen] = useState(false);
+//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+//   const openImageView = (imageIndex) => {
+//     setCurrentImageIndex(imageIndex);
+//     setIsViewOpen(true);
+//   };
+
+//   const closeImageView = () => {
+//     setIsViewOpen(false);
+//   };
+
+//   const EshopImages = [
+//     {url: Eshop},
+//     {url: Eshop2},
+//     {url: Eshop3},
+//     {url: Eshop4},
+//     {url: Eshop5},
+//     {url: Eshop6},
+//     {url: Eshop7},
+//     {url: Eshop8},
+//     {url: Eshop9},
+//   ]
+
+//   const NetflixCloneImages = [
+//     {url: NetflixClone},
+//     {url: NetflixClone2},
+//     {url: NetflixClone3},
+//     {url: NetflixClone4},
+//     {url: NetflixClone5},
+//     {url: NetflixClone6},
+//     {url: NetflixClone7},
+//   ]
+
+//   const SupChatImages = [
+//     {url: SupChat},
+//     {url: SupChat2},
+//     {url: SupChat3},
+//     {url: SupChat4},
+//     {url: SupChat5},
+//     {url: SupChat6},
+//     {url: SupChat7},
+//   ]
+
+//   const projects = [
+//     {
+//       images:[
+//         {url: Eshop},
+//         {url: Eshop2},
+//         {url: Eshop3},
+//         {url: Eshop4},
+//         {url: Eshop5},
+//         {url: Eshop6},
+//         {url: Eshop7},
+//         {url: Eshop8},
+//         {url: Eshop9},
+//       ],
+//       // imgPath={Eshop}
+//       title:"Eshop (Amazon Clone)",
+//       description:"In this eCommerce project, I meticulously replicated the fundamental features of the renowned Amazon website. The platform encompasses key elements of Amazon's user interface, intuitive navigation, product listings, and a secure checkout process. Not only does it mirror the core functionalities of Amazon, but it also integrates seamless user interactions, secure transactions, and an engaging shopping experience.",
+//       ghLink:"https://github.com/Drakomt/EshopMERN",
+//       demoLink:"https://eshop-mern-client.vercel.app/",
+//     },
+//     {
+//       images:[
+//         {url: NetflixClone},
+//         {url: NetflixClone2},
+//         {url: NetflixClone3},
+//         {url: NetflixClone4},
+//         {url: NetflixClone5},
+//         {url: NetflixClone6},
+//         {url: NetflixClone7},
+//       ],
+//       // imgPath={NetflixClone}
+//       title:"Streaming System (Netflix Clone)",
+//       description:"In this Netflix clone project, I meticulously replicated the foundational features and aesthetics of the widely recognized video streaming platform, Netflix. The project not only mirrors the core functionalities of Netflix but also incorporates my unique enhancements, providing an immersive and user-friendly streaming experience.",
+//       ghLink:"https://github.com/Drakomt/NetflixClone",
+//       demoLink:"https://netflix-clone-client-two.vercel.app/",
+//     },
+//     {
+//       images:[
+//         {url: SupChat},
+//         {url: SupChat2},
+//         {url: SupChat3},
+//         {url: SupChat4},
+//         {url: SupChat5},
+//         {url: SupChat6},
+//         {url: SupChat7},
+//       ],
+//       // imgPath={SupChat}
+//       title:"SupChat",
+//       description:"In the SupChat project, I developed a sophisticated chat application reminiscent of WhatsApp. This platform enables users to create group chats, engage in private conversations with both contacts and non-contacts, and share images seamlessly. The application is crafted using state-of-the-art technologies, providing a secure, user-friendly, and real-time communication experience.",
+//       ghLink:"https://github.com/Drakomt/SupChat",
+//       // demoLink="",    
+//     },
+//   ];
+
+//   return (
+//     <Container fluid className="project-section">
+//       <Particle />
+//       <Container>
+//         {/* Your existing project cards */}
+//         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+//           {projects.map((project, index) => (
+//             <Col md={4} className="project-card" key={index}>
+//               <ProjectCard
+//                 images={project.images}
+//                 title={project.title}
+//                 description={project.description}
+//                 ghLink={project.ghLink}
+//                 demoLink={project.demoLink}
+//                 onImageClick={() => {openImageView(index)}} // Pass the click handler
+//               />
+//             </Col>
+//           ))}
+//         </Row>
+
+//         {/* ImageView at a higher level */}
+//         {isViewOpen && (
+//           <ImageView
+//             imageUrl={projects[currentImageIndex].images[0].url} // Adjust as needed
+//             alt={projects[currentImageIndex].images[0].alt} // Adjust as needed
+//             onClose={closeImageView}
+//             onPrev={() =>
+//               setCurrentImageIndex((prev) =>
+//                 prev === 0 ? projects.length - 1 : prev - 1
+//               )
+//             }
+//             onNext={() =>
+//               setCurrentImageIndex((prev) =>
+//                 prev === projects.length - 1 ? 0 : prev + 1
+//               )
+//             }
+//           />
+//         )}
+//       </Container>
+//     </Container>
+//   );
+// }
+
+// export default Projects;

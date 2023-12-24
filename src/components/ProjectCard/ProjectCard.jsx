@@ -17,7 +17,8 @@ function ProjectCards(props) {
         margin: "0 auto",
       }}
     >
-      <ImageSlider images={props.images} />
+      <ImageSlider images={props.images} onImageClick={props.onImageClick}/>
+      {/* <ImageSlider images={props.images} /> */}
     </div>
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
