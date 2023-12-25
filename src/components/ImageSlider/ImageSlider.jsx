@@ -10,7 +10,7 @@ import {
 import "./ImageSlider.css"
 import ImageView from "../ImageView/ImageView";
 
-function ImageSlider({ images }) {
+function ImageSlider({ images, onImageClick}) {
   const [imageIndex, setImageIndex] = useState(0);
   // const [isViewOpen, setIsViewOpen] = useState(false);
 
@@ -44,6 +44,7 @@ function ImageSlider({ images }) {
       <a href="#after-image-slider-controls" className="skip-link">
         Skip Image Slider Controls
       </a>
+      <button onClick={onImageClick}>
       <div
         style={{
           width: "100%",
@@ -54,16 +55,17 @@ function ImageSlider({ images }) {
       >
         {images.map(({ url, alt }, index) => (
           <img
-            key={url}
-            src={url}
-            alt={alt}
-            aria-hidden={imageIndex !== index}
-            className="img-slider-img"
-            style={{ translate: `${-100 * imageIndex}%` }}
-            // onClick={openImageView}
-          />
+          key={url}
+          src={url}
+          alt={alt}
+          aria-hidden={imageIndex !== index}
+          className="img-slider-img"
+          style={{ translate: `${-100 * imageIndex}%` }}
+          // onClick={openImageView}
+        />
         ))}
       </div>
+      </button>
       <button
         onClick={showPrevImage}
         className="img-slider-btn"
