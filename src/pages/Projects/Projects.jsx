@@ -195,10 +195,10 @@ import ImageSlider from "../../components/ImageSlider/ImageSlider";
 
 function Projects() {
   const [isViewOpen, setIsViewOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [currentImages, setCurrentImages] = useState([]);
 
-  const openImageView = (index) => {
-    console.log("Open image");
+  const openImageView = (images) => {
+    setCurrentImages(images);
     setIsViewOpen(true);
   };
 
@@ -273,15 +273,12 @@ function Projects() {
                 description={project.description}
                 ghLink={project.ghLink}
                 demoLink={project.demoLink}
-                onImageClick={() => {openImageView(index)}} // Pass the click handler
+                onImageClick={() => {openImageView(project.images)}} // Pass the click handler
               />
-              {isViewOpen && <ImageView images={project.images} onClose={closeImageView} />}
-
             </Col>
           ))}
         </Row>
-
-        {/* {isViewOpen && <ImageView images={[SupChat, SupChat2]} onClose={closeImageView} />} */}
+        {isViewOpen && <ImageView images={currentImages} onClose={closeImageView} />}
       </Container>
     </Container>
   );

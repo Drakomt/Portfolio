@@ -1,18 +1,15 @@
-import { useState } from "react"
-// import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
-import {
-    FaArrowLeft,
-    FaArrowRight,
-    FaCircle,
-    FaDotCircle,
-  } from "react-icons/fa";
-  import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
 import "./ImageSlider.css"
-import ImageView from "../ImageView/ImageView";
+import { useState } from "react"
+import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
+// import {
+//     FaArrowLeft,
+//     FaArrowRight,
+//     FaCircle,
+//     FaDotCircle,
+//   } from "react-icons/fa";
 
 function ImageSlider({ images, onImageClick}) {
   const [imageIndex, setImageIndex] = useState(0);
-  // const [isViewOpen, setIsViewOpen] = useState(false);
 
   function showNextImage() {
     setImageIndex(index => {
@@ -28,14 +25,6 @@ function ImageSlider({ images, onImageClick}) {
     })
   }
 
-  // const openImageView = () => {
-  //   setIsViewOpen(true);
-  // };
-
-  // const closeImageView = () => {
-  //   setIsViewOpen(false);
-  // };
-
   return (
     <section
       aria-label="Image Slider"
@@ -44,7 +33,7 @@ function ImageSlider({ images, onImageClick}) {
       <a href="#after-image-slider-controls" className="skip-link">
         Skip Image Slider Controls
       </a>
-      <button onClick={onImageClick}>
+      <button onClick={onImageClick} className="img-btn">
       <div
         style={{
           width: "100%",
@@ -61,7 +50,6 @@ function ImageSlider({ images, onImageClick}) {
           aria-hidden={imageIndex !== index}
           className="img-slider-img"
           style={{ translate: `${-100 * imageIndex}%` }}
-          // onClick={openImageView}
         />
         ))}
       </div>
@@ -111,15 +99,6 @@ function ImageSlider({ images, onImageClick}) {
           </button>
         ))}
       </div>
-      {/* {isViewOpen && (
-        <ImageView
-          imageUrl={images[imageIndex].url}
-          alt={images[imageIndex].alt}
-          onClose={closeImageView}
-          onPrev={showPrevImage}
-          onNext={showNextImage}
-        />
-      )} */}
     </section>
   )
 }
