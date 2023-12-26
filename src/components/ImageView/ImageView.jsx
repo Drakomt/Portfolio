@@ -8,18 +8,18 @@ import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
 //     FaDotCircle,
 //   } from "react-icons/fa";
 
-const ImageView = ({ images, onClose }) => {
-  const [imageIndex, setImageIndex] = useState(0);
+const ImageView = ({ images, onClose, initialIndex }) => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(initialIndex);
 
   function showNextImage() {
-    setImageIndex(index => {
+    setCurrentImageIndex(index => {
       if (index === images.length - 1) return 0
       return index + 1
     })
   }
 
   function showPrevImage() {
-    setImageIndex(index => {
+    setCurrentImageIndex(index => {
       if (index === 0) return images.length - 1
       return index - 1
     })
@@ -62,9 +62,9 @@ const ImageView = ({ images, onClose }) => {
           key={url}
           src={url}
           alt={alt}
-          aria-hidden={imageIndex !== index}
+          aria-hidden={currentImageIndex !== index}
           className="img-slider-img"
-          style={{ translate: `${-100 * imageIndex}%` }}
+          style={{ translate: `${-100 * currentImageIndex}%` }}
         />
         ))}
       </div>
@@ -101,9 +101,9 @@ const ImageView = ({ images, onClose }) => {
             key={index}
             className="img-slider-dot-btn"
             aria-label={`View Image ${index + 1}`}
-            onClick={() => setImageIndex(index)}
+            onClick={() => setCurrentImageIndex(index)}
           >
-            {index === imageIndex ? (
+            {index === currentImageIndex ? (
               // <FaDotCircle aria-hidden/>
               <CircleDot aria-hidden />
             ) : (

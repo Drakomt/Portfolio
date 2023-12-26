@@ -188,7 +188,7 @@ import SupChat5 from "../../assets/Projects/SupChat/SupChat-5.png";
 import SupChat6 from "../../assets/Projects/SupChat/SupChat-6.png";
 import SupChat7 from "../../assets/Projects/SupChat/SupChat-7.png";
 import ImageView from "../../components/ImageView/ImageView";
-import ImageSlider from "../../components/ImageSlider/ImageSlider";
+import { useSelector } from "react-redux";
 
 
 
@@ -196,6 +196,7 @@ import ImageSlider from "../../components/ImageSlider/ImageSlider";
 function Projects() {
   const [isViewOpen, setIsViewOpen] = useState(false);
   const [currentImages, setCurrentImages] = useState([]);
+  const { imageIndex } = useSelector((state) => state.imageSlice);
 
   const openImageView = (images) => {
     setCurrentImages(images);
@@ -263,7 +264,6 @@ function Projects() {
     <Container fluid className="project-section">
       <Particle />
       <Container>
-        {/* Your existing project cards */}
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           {projects.map((project, index) => (
             <Col md={4} className="project-card" key={index}>
@@ -273,12 +273,12 @@ function Projects() {
                 description={project.description}
                 ghLink={project.ghLink}
                 demoLink={project.demoLink}
-                onImageClick={() => {openImageView(project.images)}} // Pass the click handler
+                onImageClick={() => {openImageView(project.images)}}
               />
             </Col>
           ))}
         </Row>
-        {isViewOpen && <ImageView images={currentImages} onClose={closeImageView} />}
+        {isViewOpen && <ImageView images={currentImages} onClose={closeImageView} initialIndex={imageIndex}/>}
       </Container>
     </Container>
   );

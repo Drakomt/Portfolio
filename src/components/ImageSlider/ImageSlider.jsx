@@ -1,6 +1,8 @@
 import "./ImageSlider.css"
 import { useState } from "react"
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
+import { useDispatch } from "react-redux";
+import { setImageIndex } from "../../store/imageSlice";
 // import {
 //     FaArrowLeft,
 //     FaArrowRight,
@@ -9,20 +11,26 @@ import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react"
 //   } from "react-icons/fa";
 
 function ImageSlider({ images, onImageClick}) {
-  const [imageIndex, setImageIndex] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const dispatch = useDispatch();
 
   function showNextImage() {
-    setImageIndex(index => {
+    setCurrentImageIndex(index => {
       if (index === images.length - 1) return 0
       return index + 1
     })
   }
 
   function showPrevImage() {
-    setImageIndex(index => {
+    setCurrentImageIndex(index => {
       if (index === 0) return images.length - 1
       return index - 1
     })
+  }
+
+  function handleImageClick() {
+    dispatch(setImageIndex(currentImageIndex));
+    onImageClick();
   }
 
   return (
@@ -33,7 +41,7 @@ function ImageSlider({ images, onImageClick}) {
       <a href="#after-image-slider-controls" className="skip-link">
         Skip Image Slider Controls
       </a>
-      <button onClick={onImageClick} className="img-btn">
+      <button onClick={handleImageClick} className="img-btn">
       <div
         style={{
           width: "100%",
@@ -47,9 +55,9 @@ function ImageSlider({ images, onImageClick}) {
           key={url}
           src={url}
           alt={alt}
-          aria-hidden={imageIndex !== index}
+          aria-hidden={currentImageIndex !== index}
           className="img-slider-img"
-          style={{ translate: `${-100 * imageIndex}%` }}
+          style={{ translate: `${-100 * currentImageIndex}%` }}
         />
         ))}
       </div>
@@ -87,9 +95,9 @@ function ImageSlider({ images, onImageClick}) {
             key={index}
             className="img-slider-dot-btn"
             aria-label={`View Image ${index + 1}`}
-            onClick={() => setImageIndex(index)}
+            onClick={() => setCurrentImageIndex(index)}
           >
-            {index === imageIndex ? (
+            {index === currentImageIndex ? (
               // <FaDotCircle aria-hidden/>
               <CircleDot aria-hidden />
             ) : (
