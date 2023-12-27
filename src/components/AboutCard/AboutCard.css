@@ -17,5 +17,9 @@
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: #f75d5dbb !important;
+}
+
+.blockquote-text {
+  color: #f75d5dbb !important;
 }

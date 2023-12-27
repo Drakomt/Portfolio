@@ -64,7 +64,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #68187a;
+    background: #863662;
     transition: 0.5s;
     transform: scale(0.9);
     z-index: -1;
@@ -72,13 +72,13 @@
 
 .intro-social-icons:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #801f95;
+    box-shadow: 0 0 15px #a53f3f;
 }
 
 .intro-social-icons:hover {
     color: #87209e;
-    box-shadow: 0 0 5px #87209e;
-    text-shadow: 0 0 2px #87209e;
+    box-shadow: 0 0 5px #A84949;
+    text-shadow: 0 0 2px #A84949;
 }
 
 .social-icons {

@@ -21,7 +21,7 @@
   
   .navbar-toggler span {
     display: block !important;
-    background-color: #be50f4 !important;
+    background-color: #eb3030 !important;
     height: 4px !important;
     width: 27px !important;
     margin-top: 5px !important;
@@ -118,7 +118,7 @@
     height: 5px;
     width: 0;
     border-radius: 16px;
-    background: #c95bf5;
+    background: #eb3030;
     bottom: 1px;
     left: 0;
     z-index: -1;
@@ -137,7 +137,7 @@
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #81202098 !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
@@ -145,8 +145,8 @@
 
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #961b1bce !important;
+  border-color: #961b1bce !important;
 }
 .fork-btn-inner::after {
   display: none !important;

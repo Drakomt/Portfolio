@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 html {
-  scrollbar-color: rgba(222, 130, 235, 0.911) #2d1950 !important;  /*Scrollbar For FireFox*/     
+  scrollbar-color: rgba(235, 130, 130, 0.911) #50192D !important;  /*Scrollbar For FireFox*/     
   scrollbar-width: auto !important;                                    /* --------- */
 
   --section-background-color: linear-gradient(
@@ -16,7 +16,7 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --imp-text-color: #eb3030;
 }
 
 .purple {
@@ -48,13 +48,13 @@ body {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: rgba(216, 121, 121, 0.959);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: rgba(235, 130, 130, 0.911);
   border-radius: 12px;
 }
 
@@ -62,14 +62,14 @@ body {
 
 .btn-primary {
   color: #fff;
-  background-color: #623686;
-  border-color: #623686;
+  background-color: #b92c2cbd;
+  border-color: #b92c2cbd;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #6d20c5d7;
-  border-color: #6d20c5d7;
+  background-color: #bd1f1f;
+  border-color: #f8f8f8;
 }
 .btn:focus {
   outline: none;
