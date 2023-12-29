@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
 
 html {
-  scrollbar-color: rgba(235, 130, 130, 0.911) #50192D !important;  /*Scrollbar For FireFox*/     
+  scrollbar-color: #eb3030 #501717 !important;  /*Scrollbar For FireFox*/     
   scrollbar-width: auto !important;                                    /* --------- */
 
   --section-background-color: linear-gradient(
@@ -43,18 +43,18 @@ body {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: #501717;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(216, 121, 121, 0.959);
+  background: #eb3030;
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(235, 130, 130, 0.911);
+  background: #8f0f0f;
   border-radius: 12px;
 }
 
