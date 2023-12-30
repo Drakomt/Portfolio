@@ -72,13 +72,13 @@
 
 .intro-social-icons:hover::before {
     transform: scale(1.1);
-    box-shadow: 0 0 15px #a53f3f;
+    box-shadow: 0 0 15px #e94545;
 }
 
 .intro-social-icons:hover {
     color: #87209e;
-    box-shadow: 0 0 5px #A84949;
-    text-shadow: 0 0 2px #A84949;
+    box-shadow: 0 0 5px #eb3030;
+    text-shadow: 0 0 2px #eb3030;
 }
 
 .social-icons {
@@ -88,5 +88,5 @@
 }
 
 .icon-colour {
-    color: #700c86 !important;
+    color: #991111 !important;
 }
