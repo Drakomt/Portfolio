@@ -1,6 +1,6 @@
 import "./Home.css";
 import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../assets/home-main.svg";
+import HomeImage from "../../assets/HomeImage.svg";
 import Particle from "../../components/Particle";
 import Introduction from "../../components/Introduction/Introduction";
 import Typewriter from "../../components/Typewriter/Typewriter";
@@ -32,7 +32,7 @@ function Home() {
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
-                src={homeLogo}
+                src={HomeImage}
                 alt="home pic"
                 className="img-fluid"
                 style={{ maxHeight: "450px" }}
