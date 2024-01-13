@@ -19,3 +19,6 @@ This project was built using these technologies.
 
 **📱 Fully Responsive**
 
+
+
+Personal portfolio
