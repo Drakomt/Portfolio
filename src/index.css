@@ -19,7 +19,7 @@ html {
   --imp-text-color: #eb3030;
 }
 
-.purple {
+.red {
   color: var(--imp-text-color) !important;
 }
 

@@ -16,7 +16,7 @@ function Introduction() {
         <Row>
           <Col md={8} className="intro-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              LET ME <span className="red"> INTRODUCE </span> MYSELF
             </h1>
             <p className="intro-body">
               I fell in love with programming and I have at least learnt
@@ -24,34 +24,34 @@ function Introduction() {
               <br />
               <br />I am fluent in classics like
               <i>
-                <b className="purple"> Javascript ,C# and Python. </b>
+                <b className="red"> Javascript ,C# and Python. </b>
               </i>
               <br />
               <br />
               My fields of interest include building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products, </b> as well as areas related to{" "}
-                <b className="purple">
+                <b className="red">Web Technologies and Products, </b> as well as areas related to{" "}
+                <b className="red">
                   AI and Machine Learning.
                 </b>
               </i>
               <br />
               <br />
               Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
+              with <b className="red">Node.js</b> and
               <i>
-                <b className="purple">
+                <b className="red">
                   {" "}
                   Modern Javascript Library and Frameworks
                 </b>
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="red"> React.js and Next.js</b>
               </i>
             </p>
           </Col>
-          <Col md={4} className="myAvtar">
+          <Col md={4} className="myAvatar">
             <Tilt>
               <img src={myImg} className="img-fluid" alt="avatar" />
             </Tilt>
@@ -61,7 +61,7 @@ function Introduction() {
           <Col md={12} className="intro-social">
             <h1>FIND ME ON</h1>
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              Feel free to <span className="red">connect </span>with me
             </p>
             <ul className="intro-social-links">
               <li className="social-icons">
