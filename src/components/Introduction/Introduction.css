@@ -64,7 +64,7 @@
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: #863662;
+    background: #eb3030;
     transition: 0.5s;
     transform: scale(0.9);
     z-index: -1;
@@ -76,7 +76,7 @@
 }
 
 .intro-social-icons:hover {
-    color: #87209e;
+    color: #eb3030;
     box-shadow: 0 0 5px #eb3030;
     text-shadow: 0 0 2px #eb3030;
 }
@@ -88,5 +88,5 @@
 }
 
 .icon-colour {
-    color: #991111 !important;
+    color: #720000 !important;
 }

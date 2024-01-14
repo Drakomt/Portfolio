@@ -9,7 +9,7 @@ function Typewriter() {
           "Software Developer",
           "Freelancer",
           "Full-Stack Developer",
-          "Open Source Contributor",
+          "Tank Commander",
         ],
         autoStart: true,
         loop: true,

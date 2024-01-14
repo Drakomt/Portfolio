@@ -28,12 +28,11 @@ function Introduction() {
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My fields of interest include building new &nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
+                <b className="purple">Web Technologies and Products, </b> as well as areas related to{" "}
                 <b className="purple">
-                  Blockchain.
+                  AI and Machine Learning.
                 </b>
               </i>
               <br />

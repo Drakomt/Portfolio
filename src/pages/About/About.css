@@ -5,3 +5,9 @@
     background-image: var(--section-background-color) !important;
     color: white !important;
 }
+
+@media (max-width: 767px) {
+    .about-img {
+      padding-top: 0 !important;
+    }
+}
