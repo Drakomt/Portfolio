@@ -19,6 +19,24 @@ function Introduction() {
               LET ME <span className="red"> INTRODUCE </span> MYSELF
             </h1>
             <p className="intro-body">
+              Hey, I'm <b className="red"> Matthew </b>, a former <b className="red"> Tank Commander </b> turned <b className="red"> Full-Stack Developer. </b>
+              <br />
+              <br /> 
+              Having navigated diverse terrains, I now navigate the digital landscape with skills in <b className="red"> JavaScript, C#, and Python. </b>
+              <br />
+              <br />
+              My coding journey is a unique blend of <b className="red"> Military Precision </b> and creative flair, where I transform concepts into <b className="red"> User-Centric</b> digital experiences. 
+              <br />
+              <br />
+              I specialize in crafting <b className="red"> Innovative Solutions </b> that reflect a blend of <b className="red"> Strategic </b> thinking and <b className="red"> Tech Innovation. </b>
+              <br />
+              <br />
+              Ready to embark on a new <b className="red"> Adventure? </b> Let's <b className="red"> Connect </b> and build something <b className="red"> Extraordinary </b> together!
+            </p>
+
+
+
+            {/* <p className="intro-body">
               I fell in love with programming and I have at least learnt
               something, I think… 🤷‍♂️
               <br />
@@ -49,7 +67,7 @@ function Introduction() {
               <i>
                 <b className="red"> React.js and Next.js</b>
               </i>
-            </p>
+            </p> */}
           </Col>
           <Col md={4} className="myAvatar">
             <Tilt>
