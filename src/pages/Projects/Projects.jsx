@@ -221,7 +221,7 @@ function Projects() {
         {url: Eshop9},
       ],
       // imgPath={Eshop}
-      title:"Eshop (Amazon Clone)",
+      title:"Eshop (Amazon-Like)",
       description:"In this eCommerce project, I meticulously replicated the fundamental features of the renowned Amazon website. The platform encompasses key elements of Amazon's user interface, intuitive navigation, product listings, and a secure checkout process. Not only does it mirror the core functionalities of Amazon, but it also integrates seamless user interactions, secure transactions, and an engaging shopping experience.",
       ghLink:"https://github.com/Drakomt/EshopMERN",
       demoLink:"https://eshop-mern-client.vercel.app/",
@@ -237,7 +237,7 @@ function Projects() {
         {url: NetflixClone7},
       ],
       // imgPath={NetflixClone}
-      title:"Streaming System (Netflix Clone)",
+      title:"Streaming System (Netflix-Like)",
       description:"In this Netflix clone project, I meticulously replicated the foundational features and aesthetics of the widely recognized video streaming platform, Netflix. The project not only mirrors the core functionalities of Netflix but also incorporates my unique enhancements, providing an immersive and user-friendly streaming experience.",
       ghLink:"https://github.com/Drakomt/NetflixClone",
       demoLink:"https://netflix-clone-client-two.vercel.app/",
