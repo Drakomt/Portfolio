@@ -25,7 +25,7 @@ function Introduction() {
               Having navigated diverse terrains, I now navigate the digital landscape with skills in <b className="red"> JavaScript, C#, and Python. </b>
               <br />
               <br />
-              My coding journey is a unique blend of <b className="red"> Military Precision </b> and creative flair, where I transform concepts into <b className="red"> User-Centric</b> digital experiences. 
+              My coding journey is a unique blend of <b className="red"> Military Precision </b> and <b className="red"> creative flair, </b> where I transform concepts into <b className="red"> User-Centric</b> digital experiences. 
               <br />
               <br />
               I specialize in crafting <b className="red"> Innovative Solutions </b> that reflect a blend of <b className="red"> Strategic </b> thinking and <b className="red"> Tech Innovation. </b>
