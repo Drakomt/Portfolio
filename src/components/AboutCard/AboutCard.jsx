@@ -28,9 +28,9 @@ function AboutCard() {
           </ul>
 
           <p className="blockquote-text">
-            "Strive to build things that make a difference!"{" "}
+            "The only way to do great work is to love what you do."{" "}
           </p>
-          <footer className="blockquote-footer">Matthew</footer>
+          <footer className="blockquote-footer">Steve Jobs</footer>
         </blockquote>
       </Card.Body>
     </Card>
